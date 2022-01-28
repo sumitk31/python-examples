@@ -16,3 +16,7 @@ print("For Demo")
 for i in range(0,5):
     print(i)
 
+'''For Demo'''
+print("For Demo")
+for i in range(-1,5):
+    print(i)
