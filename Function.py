@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-"""Loop.py: Demo code for python functions"""
+"""Function.py: Demo code for python functions"""
 
 __author__ = "Sumit Kala"
 

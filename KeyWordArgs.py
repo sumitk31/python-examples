@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-"""Loop.py: Demo code for python loops"""
+"""KeyWordArgs.py: Demo code for kwargs in function"""
 
 __author__      = "Sumit Kala"
 
