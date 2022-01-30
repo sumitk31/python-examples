@@ -8,13 +8,15 @@ __author__ = "Sumit Kala"
    Keys are unique within a dictionary while values may not be. The values of a dictionary can be of any type,
    but the keys must be of an immutable data type such as strings, numbers, or tuples.'''
 
+
 def mydict():
-    mydictionary = {'Name':'Sumit','Age':38,'Gender':'Male','Country':'India'}
+    mydictionary = {'Name': 'Sumit', 'Age': 38, 'Gender': 'Male', 'Country': 'India'}
     return mydictionary
+
 
 def main():
     x = mydict()
-    for k,v in x.items():
+    for k, v in x.items():
         print(f'{k}{" "}{v}')
     keys = x.keys()
     for k in keys:
@@ -23,5 +25,6 @@ def main():
     for v in values:
         print(f'{v}')
 
-if __name__ == '__main__':  # forces the interpreter to read the complete file before execution
-        main()
+
+if __name__ == '__main__':
+    main()
