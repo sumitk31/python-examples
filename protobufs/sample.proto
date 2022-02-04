@@ -1,0 +1,8 @@
+syntax="proto3";
+
+message City{
+       string name=1;
+       string pincode=2;
+       string country=3;
+       repeated string phone=4;
+    }

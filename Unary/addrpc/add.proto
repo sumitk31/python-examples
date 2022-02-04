@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package addrpc;
+
+service Add{
+  // A simple RPC.
+  //
+  // Obtains the MessageResponse at a given position.
+ rpc GetAddResult(Numbers) returns (AddResult) {}
+
+}
+
+message Numbers{
+ int32 a = 1;
+ int32 b = 2;
+}
+
+message AddResult{
+ int32 sum= 1;
+}

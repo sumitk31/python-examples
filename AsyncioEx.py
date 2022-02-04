@@ -13,8 +13,13 @@ def sync_f():
 
 async def async_f():
     print("One",end="")
-    asyncio.sleep(1)
+    await asyncio.sleep(1)
     print("Two",end="")
 
-def main()
-    sync_f()
+async def main():
+    #async_f()
+    await asyncio.gather(async_f(),async_f(),async_f())
+
+
+if __name__ == '__main__':
+    asyncio.run(main())
