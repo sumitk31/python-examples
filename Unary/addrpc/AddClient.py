@@ -3,7 +3,7 @@ import Unary.addrpc.add_pb2_grpc as add_pb2_grpc
 import Unary.addrpc.add_pb2 as add_pb2
 
 
-class AddClient(object):
+class Client(object):
     """
     Client for gRPC functionality
     """
@@ -23,6 +23,9 @@ class AddClient(object):
         """
         Client function to call the rpc for GetServerResponse
         """
+        #dummy test a>b
+        if a>b:
+            return True
         numbers = add_pb2.Numbers(a=a,b=b)
 
         print(f'{numbers}')
@@ -30,7 +33,7 @@ class AddClient(object):
 
 
 if __name__ == '__main__':
-    client = AddClient()
+    client = Client()
     for i in range(5):
       result = client.get_sum(i, 2)
       i=i+1

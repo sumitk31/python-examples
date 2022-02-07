@@ -13,6 +13,13 @@ def myList():
     return list
 
 
+def AddToList(mylist, item):
+    #if item != 'z':
+    mylist.append(item)
+
+def DelFromList(mylist):
+    mylist.pop()
+
 def main():
     x = myList()
     for i in x:
@@ -24,6 +31,8 @@ def main():
     x.pop(3)  # pop the third element
     for i, value in enumerate(x):  # print index and value of list
         print(f'{i},{" "}{value}')
+    ll = []
+    AddToList(ll, 'a')
 
 
 if __name__ == '__main__':
